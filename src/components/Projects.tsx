@@ -10,6 +10,8 @@ const Projects = () => {
       technologies: ["HTML", "CSS", "JavaScript", "PHP"],
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/cosmetics-ecommerce",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      gradient: "from-pink-500/20 to-purple-500/20"
     },
     {
       title: "Chatbot",
@@ -17,6 +19,8 @@ const Projects = () => {
       technologies: ["Python", "NLP", "Flask"],
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/chatbot",
+      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
+      gradient: "from-blue-500/20 to-cyan-500/20"
     },
     {
       title: "Weather Forecast Website",
@@ -24,6 +28,8 @@ const Projects = () => {
       technologies: ["JavaScript", "API", "HTML", "CSS"],
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/weather-forecast",
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
+      gradient: "from-sky-500/20 to-blue-500/20"
     },
     {
       title: "Voice of Palestine Website",
@@ -31,6 +37,8 @@ const Projects = () => {
       technologies: ["HTML", "CSS", "JavaScript", "CMS"],
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/voice-of-palestine",
+      image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80",
+      gradient: "from-green-500/20 to-emerald-500/20"
     },
     {
       title: "PDF Embedder Project",
@@ -38,45 +46,89 @@ const Projects = () => {
       technologies: ["Python", "FastAPI", "JavaScript"],
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/pdf-embedder",
+      image: "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&q=80",
+      gradient: "from-indigo-500/20 to-blue-500/20"
     },
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 bg-muted/30">
-      <div className="container max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Projects</h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">A showcase of my recent work</p>
+    <section id="projects" className="py-20 px-4 relative overflow-hidden">
+      {/* Background gradient mesh */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/30 to-background pointer-events-none"></div>
+      
+      <div className="container max-w-6xl relative z-10">
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Featured <span className="gradient-text">Projects</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            A showcase of my recent work and creative solutions
+          </p>
+        </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="border-2 hover:shadow-xl transition-all flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-xl">{project.title}</CardTitle>
+            <Card 
+              key={index} 
+              className="group border-2 hover:border-primary/50 transition-all duration-500 flex flex-col overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2"
+            >
+              {/* Project Image with Overlay */}
+              <div className="relative h-48 overflow-hidden">
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-60 group-hover:opacity-40 transition-opacity duration-500 z-10`}></div>
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-80 z-10"></div>
+              </div>
+
+              <CardHeader className="relative">
+                <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </CardTitle>
               </CardHeader>
+
               <CardContent className="flex-1 space-y-4">
-                <p className="text-muted-foreground">{project.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium border border-primary/20 hover:bg-primary/20 transition-colors duration-300"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex gap-2">
-                <Button variant="default" size="sm" className="flex-1" asChild>
+
+              <CardFooter className="flex gap-3 pt-4">
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="flex-1 group/btn relative overflow-hidden" 
+                  asChild
+                >
                   <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Project
+                    <span className="relative z-10 flex items-center justify-center">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
                   </a>
                 </Button>
-                <Button variant="outline" size="sm" className="flex-1" asChild>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1 hover:bg-primary/10 hover:border-primary transition-colors duration-300" 
+                  asChild
+                >
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
-                    GitHub
+                    Code
                   </a>
                 </Button>
               </CardFooter>
