@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
-     <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="container max-w-6xl">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left space-y-6">
