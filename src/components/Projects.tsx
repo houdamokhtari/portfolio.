@@ -16,7 +16,7 @@ const Projects = () => {
       description: "An intelligent chatbot application using natural language processing to provide automated customer support and assistance.",
       technologies: ["Python", "NLP", "Flask"],
       projectUrl: "#",
-      githubUrl: "https://github.com/nourelhouda/chatbot",
+      githubUrl: "https://github.com/AichourSarra/botProject",
     },
     {
       title: "Weather Forecast Website",
@@ -30,7 +30,7 @@ const Projects = () => {
       description: "A content management website dedicated to sharing news, stories, and cultural content about Palestine.",
       technologies: ["HTML", "CSS", "JavaScript", "CMS"],
       projectUrl: "#",
-      githubUrl: "https://github.com/nourelhouda/voice-of-palestine",
+      githubUrl: "https://github.com/houdamokhtari/voice-of-palestine",
     },
     {
       title: "PDF Embedder Project",
