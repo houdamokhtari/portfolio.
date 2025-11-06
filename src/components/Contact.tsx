@@ -19,8 +19,8 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold">Email</h3>
               <Button variant="link" className="text-secondary" asChild>
-                <a href="mailto:nourelhouda@example.com">
-                  nourelhouda@example.com
+                <a href="mailto:mokhtarinourelhouda64@gmail.com">
+                  mokhtarinourelhouda64@gmail.com
                 </a>
               </Button>
             </CardContent>
@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold">GitHub</h3>
               <Button variant="link" className="text-secondary" asChild>
-                <a href="https://github.com/nourelhouda" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/houdamokhtari" target="_blank" rel="noopener noreferrer">
                   View my work
                 </a>
               </Button>
