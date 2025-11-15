@@ -5,10 +5,10 @@ import { Download, FileText, Image, Video, Layers } from "lucide-react";
 const Downloads = () => {
   const tps = [
     {
-      name: "TP 1 - Introduction to Web Technologies",
-      tp: "tp1.pdf",
+      name: "TP 1 - 3D Gaza Street Scene",
+      tp: "/downloads/projetdour.blend",
       rapport: "rapport-tp1.pdf",
-      screenshot: "tp1-screenshot.jpg",
+      screenshot: "/downloads/screentp1.png",
       video: "tp1-video.mp4"
     },
     {

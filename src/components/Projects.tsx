@@ -18,7 +18,11 @@ const Projects = () => {
       description: "An intelligent chatbot application using natural language processing to provide automated customer support and assistance.",
       technologies: ["Python", "NLP", "Flask"],
       projectUrl: "#",
+<<<<<<< HEAD
       githubUrl: "https://github.com/nourelhouda/chatbot",
+=======
+      githubUrl: "https://github.com/AichourSarra/botProject",
+>>>>>>> 09f04785214c708c32f1bbc1136ccde8716a0338
       image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
       gradient: "from-blue-500/20 to-cyan-500/20"
     },
@@ -26,8 +30,13 @@ const Projects = () => {
       title: "Weather Forecast Website",
       description: "A responsive weather forecast application that displays real-time weather data and forecasts using API integration.",
       technologies: ["JavaScript", "API", "HTML", "CSS"],
+<<<<<<< HEAD
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/weather-forecast",
+=======
+      projectUrl: "https://vercel.com/mokhtari-nour-el-houdas-projects/weather",
+      githubUrl: "https://github.com/houdamokhtari/weather",
+>>>>>>> 09f04785214c708c32f1bbc1136ccde8716a0338
       image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
       gradient: "from-sky-500/20 to-blue-500/20"
     },
@@ -35,8 +44,13 @@ const Projects = () => {
       title: "Voice of Palestine Website",
       description: "A content management website dedicated to sharing news, stories, and cultural content about Palestine.",
       technologies: ["HTML", "CSS", "JavaScript", "CMS"],
+<<<<<<< HEAD
       projectUrl: "#",
       githubUrl: "https://github.com/nourelhouda/voice-of-palestine",
+=======
+      projectUrl: "https://palestine-black.vercel.app/",
+      githubUrl: "https://github.com/mokhtarihouda/voice-of-palestine",
+>>>>>>> 09f04785214c708c32f1bbc1136ccde8716a0338
       image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80",
       gradient: "from-green-500/20 to-emerald-500/20"
     },
@@ -45,7 +59,11 @@ const Projects = () => {
       description: "A FastAPI-based application that allows users to embed and display PDF documents seamlessly within web applications.",
       technologies: ["Python", "FastAPI", "JavaScript"],
       projectUrl: "#",
+<<<<<<< HEAD
       githubUrl: "https://github.com/nourelhouda/pdf-embedder",
+=======
+      githubUrl: "https://github.com/houdamokhtari/pdf",
+>>>>>>> 09f04785214c708c32f1bbc1136ccde8716a0338
       image: "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&q=80",
       gradient: "from-indigo-500/20 to-blue-500/20"
     },
